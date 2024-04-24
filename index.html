@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CURRENCY CONVERTOR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./image2/Asset 1@3x 1.svg" alt="bank" />
+      </div>
+      <div class="nav">
+        <a href="#" class="blackk">БАНК</a>
+        <a href="#">БИЗНЕС</a>
+        <a href="#">ИНВЕСТИЦИИ</a>
+        <a href="#">СТРАХОВАНИЕ</a>
+        <a href="#">МОБАЙЛ</a>
+        <a href="#">ПУТЕШЕСТВИЯ</a>
+        <a href="#">РАЗВЛЕЧЕНИЯ</a>
+      </div>
+      <div class="login">
+        <button>ВОЙТИ</button>
+      </div>
+    </header>
+    <main>
+      <h1>Конвертер валют онлайн</h1>
+      <br />
+      <div class="content">
+        <section class="first">
+          <p id="w">У меня есть</p>
+          <br />
+          <div class="money">
+            <button class="m f active">RUB</button>
+            <button class="m">AZN</button>
+            <button class="m">USD</button>
+            <button class="m">EUR</button>
+          </div>
+          <div class="last1">
+            <input
+              id="input1Box"
+              class="inp1"
+              type="number"
+              onkeydown="return event.keyCode !== 69"
+            />
+          </div>
+        </section>
+        <section class="second">
+          <p id="w">Хочу приобрести</p>
+          <br />
+          <div class="money">
+            <button class="n">RUB</button>
+            <button class="n">AZN</button>
+            <button class="n s actived">USD</button>
+            <button class="n">EUR</button>
+          </div>
+          <div class="last2">
+            <input
+              id="input2Box"
+              class="inp2"
+              type="number"
+              onkeydown="return event.keyCode !== 69"
+            />
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
